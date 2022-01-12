@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @font-face {
+            font-family: fonte-bonita;
+            src: url(/fontes/Rock3D-Regular.ttf);
+        }
+
+        .card{
+            float: left;
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+        }
+        .card2{
+            clear: left;
+            float: left;
+            border: 2px solid green;
+            padding-left: 135px;
+            padding-right: 130px;
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+        .c1{  
+          height: 100%;
+          font-family: 'fonte-bonita';
+          text-align: center;
+          line-height: 200px;
+          /* aqui é a primeira forma de fazer a movimentação da fraze sem mover todo o objeto.*/
+        }
+        .c2{
+            position: absolute;
+            /* se c1 fosse o objeto absoluto dentro de um pai relativo, o c2 ficaria em cima de c1 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            rafael rodrigues
+        </div>
+    </div>
+    <div class="card">
+        <div class="c2">
+            rafael rodrigues
+        </div>
+    </div>
+    <div>
+        <div class="card2">
+            Rafael rodrigues
+        </div>
+    </div>
+</body>
+</html>

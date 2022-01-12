@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodel</title>
+    <style>
+        h1{
+            margin: 0px;
+            padding: 0px;
+            /* dessa forma aqui o texto fica posicionado de forma a não deixar visivel o box model */
+        }
+        .container{
+            background-color: red;
+            padding: 5px;
+            border: 5px solid green;
+            margin: 10px;
+        }
+        p{
+            background-color: #ddd;
+            /* aqui ele ja sobrepós a cor do container*/
+            outline: 5px dashed black;
+            /* aqui o outline funciona independente do box model */
+            border:5px solid blueviolet;
+
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 10px solid blue;
+            padding: 10px;
+
+            box-sizing: border-box;
+            /*aqui o limite para a tamanho vai ter como referência a borda*/
+        }
+        .square2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>conteúdo</h1>
+    <div class="container">
+        <p>conteúdo</p>
+    </div>
+    <div class="square"></div>
+    <div class="square2"></div>
+</body>
+</html>

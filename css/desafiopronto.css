@@ -1,0 +1,16 @@
+/* o desafio inclui que esteja em 400x 200px */
+body{
+    background-color: rgb(184, 184, 184);
+}
+.insta{
+    
+}
+.card{
+    height: 200px;
+    height: 400px;
+    display: block;
+
+    background: url('/photos/backgorund.png') no-repeat;
+    /* Se eu usar o backgound-image eu não consigo usar o parametro no-repeat na mesma linha e tenho que delacarar ela embaixo com backgound-repeat: */
+    margin-bottom: auto;
+}
