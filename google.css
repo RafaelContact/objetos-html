@@ -1,13 +1,17 @@
+/* ainda falta a responsividade da media querie*/
 body{
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 .head{
     width: 100%;
     height: 45px;
     display: inline-block;
     font-size: 13px;
-    background-color: red;
+    background-color: ;
+    /* cabeçalho , para saber o tamanho eu fiz um fundo colorido e posicionei os objetos*/
 }
+/* os objetos img e gmail poderiam estar dentro de um objeto só com float right */
 .img{
     float: right;
     margin: 3px 10px;
@@ -16,9 +20,12 @@ body{
     float: right;
     margin: 3px 15px;
 }
+/* a class position serve para criar o objeto da tag google, input e button */ 
 .position{
     width: 100%;
     line-height: 40px;
+    background-color: ;
+    padding-bottom: 150px;
 }
 .google1{
     width: 300px;
@@ -28,8 +35,9 @@ body{
     width: 600px;
     margin: auto;
 }
-
-input{
+/* o input original tem elementos como o teclado e a lupinha, eu coloquei só uma imagem genérica */
+/*O input original também tem a estilização da borda do box diferentes*/
+.search{
     width: 560px;
     box-sizing: border-box;
     height: 45px;
@@ -41,6 +49,8 @@ input{
     padding: 0px 30px 0px 33px;
 
 }
+/* Falta colocar o elemento de transição nos botões*/
+/* */
 .buttons{
     width: 330px;
     height: 40px;
@@ -52,10 +62,37 @@ input{
     background-color: rgb(248, 249,250);
     width: 140px;
     text-align: center;
+}
+.contry{
+    width: 100%;
+    color: rgb(121, 126, 130);
+    background-color: rgb(242,242,242);
+    margin: 0px 0px 0px 0px;
+    display: ;
+    padding: 3px 0px 3px 25px;
+}
+/* Elementos do tipo lista vem com display block e tudo que eu determino na minha div se aplica a cada um deles */
+/* Por isso eu criei um position relative para os 3 elementos que deveriam ficar a direita, pois não consegui resolver com float right */
+.footer{
+    color: rgb(121, 126, 130);
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(242, 242,242);
+    margin: 5px;
+    display: inline-block;
+}
+.position2{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    border-top: 1px solid rgb(121, 126, 130);
+}
+.right{
+    float: right;
+    position: relative;
+    left: 500px;
+}
+/* Todos os links precisam de elementos de transição*/ 
 a{
     text-decoration: none;
     list-style-type: none;
-}
-.footer{
-    color: gray;
 }
