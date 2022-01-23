@@ -8,24 +8,36 @@
     <style>
         html{
             background-color: rgb(172,172,172);
+            /* colocando a cor no html ela não atrapalha a imagem do body */
         }
         body{
             width: 400px;
             height: 200px;
-            background: url(/photos/backgorund.png) center/cover no-repeat ;
+            background: url(/photos/backgorund.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* usando cover não preciso ditar o tamanho da imagem*/
             margin:auto;
+            /* foi para o centro da tela mas não foi para o meio, não sei porque */
         }
         h1{ 
             font-size: 25px;
         }
         ul{
             list-style-type: none;
-            margin-top: 60px ;
+            margin-top: 30px ;
         }
         li{ 
             margin: 10px;
         }
-        div{
+        .instagran{
+            list-style-image: url(/photos/Insta.png);
+        }
+        .twiter{
+            list-style-image: url(/photos/Twitter.png);
+        }
+        .youtube{
+            list-style-image: url(/photos/Youtube.png);
         }
     </style>
 </head>
@@ -33,9 +45,9 @@
     <div>
     <h1>Rafael Rodrigues</h1>
     <ul>
-        <li>/rafinhadev</li>
-        <li>/nãotem</li>
-        <li>/criar youtube</li>
+        <li class="instagran">/rafinhadev</li>
+        <li class="twiter">/nãotem</li>
+        <li class="youtube">/criar youtube</li>
     </ul>
     </div>
 </body>
