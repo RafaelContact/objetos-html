@@ -17,8 +17,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             /* usando cover não preciso ditar o tamanho da imagem*/
-            margin:auto;
+            margin: auto;
             /* foi para o centro da tela mas não foi para o meio, não sei porque */
+            margin-top: 10%;
+            /* agora sim ela centraliza mais ao meio */
         }
         h1{ 
             font-size: 25px;
@@ -39,15 +41,29 @@
         .youtube{
             list-style-image: url(/photos/Youtube.png);
         }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        a.visited{
+            color: #000000;
+        }
+        div{
+            letter-spacing: 0px;
+            font-family:initial;
+            width: 400px;
+            height: 200px;
+
+        }
     </style>
 </head>
 <body>
     <div>
     <h1>Rafael Rodrigues</h1>
     <ul>
-        <li class="instagran">/rafinhadev</li>
-        <li class="twiter">/nãotem</li>
-        <li class="youtube">/criar youtube</li>
+        <a href=""><li class="instagran">/rafinhadev</li></a>
+        <a href=""><li class="twiter">/nãotem</li></a>
+        <a href=""><li class="youtube">/criar youtube</li></a>
     </ul>
     </div>
 </body>
